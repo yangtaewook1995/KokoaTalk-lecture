@@ -5,26 +5,32 @@
     <link href="style.css" rel="stylesheet" />
     <style>
       body {
+        display: flex;
         margin: 20px;
-        height: 1000vh;
+        height: 100vh;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
       }
       div {
-        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100px;
         height: 100px;
-        background-color: teal;
+        background-color: aqua;
       }
-      #tomato {
+      .second {
         background-color: tomato;
-        width: 150px;
-        position: fixed;
       }
     </style>
     <meta charset="utf-8" />
     <meta name="description" content="This is my website" />
   </head>
   <body>
-    <div></div>
-    <div id="tomato"></div>
+    <div>1</div>
+    <div class="second">2</div>
+    <div>3</div>
   </body>
 </html>
