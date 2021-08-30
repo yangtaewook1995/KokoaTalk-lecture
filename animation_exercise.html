@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>WookTimes</title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+      @keyframes coinFlip {
+        0% {
+          transfrom: rotateX(0);
+        }
+        50% {
+          transform: rotateX(360deg) translateX(100px);
+        }
+        100% {
+          transform: rotateX(0) translateY(0px);
+        }
+      }
+      a {
+        color: wheat;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 10px;
+        font-size: 55px;
+        /* transition: background-color 10s ease-in-out, color 5s ease-out; */
+        transition: all 5s ease-in-out;
+      }
+      a:hover {
+        color: tomato;
+        background-color: wheat;
+        border-radius: 20px;
+      }
+      img {
+        border: 10px solid black;
+        border-radius: 50%;
+        animation: coinFlip 5s ease-in-out infinite;
+      }
+    </style>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is my website" />
+  </head>
+  <body>
+    <a href="#">Go home</a>
+    <img src="logo.png" />
+  </body>
+</html>
