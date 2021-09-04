@@ -19,3 +19,11 @@
 .icon-black {
   color: black;
 }
+
+.alt-header__column span:first-child {
+  margin-right: auto;
+}
+
+.alt-header__column span:last-child {
+  margin-left: 20px;
+}
